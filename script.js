@@ -51,3 +51,28 @@ observer.disconnect();
 })
 
 observer.observe(document.querySelector(".about"));
+const hiddenElements = document.querySelectorAll(
+".about,.experience,.skills,.projects,.education,.achievements,.contact"
+);
+
+const observer2 = new IntersectionObserver((entries)=>{
+
+entries.forEach(entry=>{
+
+if(entry.isIntersecting){
+
+entry.target.classList.add("show");
+
+}
+
+});
+
+});
+
+hiddenElements.forEach(el=>{
+
+el.classList.add("hidden");
+
+observer2.observe(el);
+
+});
