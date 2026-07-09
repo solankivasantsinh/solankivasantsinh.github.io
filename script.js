@@ -145,3 +145,67 @@ navMenu.classList.remove("active");
 });
 
 });
+/* ===========================
+   TYPING EFFECT
+=========================== */
+
+const roles=[
+"Sr. Sales Engineer",
+"Energy Efficiency Expert",
+"HVAC Specialist",
+"ESCO Consultant",
+"Industrial Automation Engineer"
+];
+
+let roleIndex=0;
+let charIndex=0;
+
+const typing=document.getElementById("typing");
+
+function typeRole(){
+
+if(charIndex<roles[roleIndex].length){
+
+typing.innerHTML+=roles[roleIndex].charAt(charIndex);
+
+charIndex++;
+
+setTimeout(typeRole,80);
+
+}
+else{
+
+setTimeout(deleteRole,1500);
+
+}
+
+}
+
+function deleteRole(){
+
+if(charIndex>0){
+
+typing.innerHTML=roles[roleIndex].substring(0,charIndex-1);
+
+charIndex--;
+
+setTimeout(deleteRole,40);
+
+}
+else{
+
+roleIndex++;
+
+if(roleIndex>=roles.length){
+
+roleIndex=0;
+
+}
+
+setTimeout(typeRole,300);
+
+}
+
+}
+
+typeRole();
