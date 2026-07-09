@@ -71,7 +71,6 @@ entry.target.classList.add("show");
 
 });
 
-});
 
 hiddenElements.forEach(el => {
 
