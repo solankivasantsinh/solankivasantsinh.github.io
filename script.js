@@ -160,8 +160,11 @@ const roles=[
 let roleIndex=0;
 let charIndex=0;
 
-const typing=document.getElementById("typing");
+const typing = document.getElementById("typing");
 
+if (typing) {
+    typeRole();
+}
 function typeRole(){
 
 if(charIndex<roles[roleIndex].length){
