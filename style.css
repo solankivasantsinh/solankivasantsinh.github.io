@@ -768,3 +768,55 @@ display:none;
     transform:translateY(-5px);
     background:#1D4ED8;
 }
+/* ===========================
+   DARK MODE
+=========================== */
+
+#theme-toggle{
+    background:none;
+    border:none;
+    color:white;
+    font-size:20px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+#theme-toggle:hover{
+    color:#38BDF8;
+}
+
+body.dark{
+    background:#0F172A;
+    color:#F8FAFC;
+}
+
+body.dark .about,
+body.dark .skills,
+body.dark .projects,
+body.dark .education{
+    background:#111827;
+}
+
+body.dark .experience,
+body.dark .achievements,
+body.dark .contact{
+    background:#1F2937;
+}
+
+body.dark .info-card,
+body.dark .timeline-content,
+body.dark .project-card,
+body.dark .education-card,
+body.dark .achievement-card,
+body.dark .contact-card{
+    background:#1E293B;
+    color:#F8FAFC;
+}
+
+body.dark p,
+body.dark span,
+body.dark h2,
+body.dark h3,
+body.dark h4{
+    color:#F8FAFC;
+}
