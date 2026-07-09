@@ -820,3 +820,57 @@ body.dark h3,
 body.dark h4{
     color:#F8FAFC;
 }
+/* ===========================
+   PREMIUM FOOTER
+=========================== */
+
+.footer{
+    background:#0F172A;
+    color:#fff;
+    padding:60px 20px;
+    text-align:center;
+}
+
+.footer h3{
+    color:#38BDF8;
+    margin-bottom:15px;
+}
+
+.footer p{
+    margin:10px 0;
+}
+
+.footer-links{
+    margin:25px 0;
+}
+
+.footer-links a{
+    color:#fff;
+    text-decoration:none;
+    margin:0 15px;
+    transition:.3s;
+}
+
+.footer-links a:hover{
+    color:#38BDF8;
+}
+
+.social-links{
+    margin:25px 0;
+}
+
+.social-links a{
+    color:#fff;
+    font-size:26px;
+    margin:0 12px;
+    transition:.3s;
+}
+
+.social-links a:hover{
+    color:#38BDF8;
+}
+
+.copyright{
+    margin-top:30px;
+    color:#94A3B8;
+}
