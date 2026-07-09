@@ -1165,3 +1165,29 @@ transform:translateY(-5px);
 background:#1D4ED8;
 
 }
+
+.hero-stats{
+
+display:flex;
+
+gap:40px;
+
+margin-top:50px;
+
+flex-wrap:wrap;
+
+}
+
+.hero-stats h3{
+
+font-size:34px;
+
+color:#38BDF8;
+
+}
+
+.hero-stats p{
+
+margin-top:8px;
+
+}
