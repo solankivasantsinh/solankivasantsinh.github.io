@@ -1,103 +1,187 @@
+/* ==========================================
+   Solanki Vasantsinh Portfolio
+   Version 1.0
+========================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#F8FAFC;
+    color:#0F172A;
+}
+
+/* ================= NAVBAR ================= */
+
+.navbar{
+    width:100%;
+    height:80px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 8%;
+    position:fixed;
+    top:0;
+    left:0;
+    background:rgba(15,23,42,.92);
+    backdrop-filter:blur(10px);
+    z-index:999;
+}
+
+.logo{
+    color:#38BDF8;
+    font-size:30px;
+    font-weight:700;
+}
+
+.nav-menu{
+    display:flex;
+    list-style:none;
+    gap:35px;
+}
+
+.nav-menu a{
+    text-decoration:none;
+    color:white;
+    font-weight:500;
+    transition:.3s;
+}
+
+.nav-menu a:hover{
+    color:#38BDF8;
+}
+
+/* ================= HERO ================= */
+
 .hero{
-
-display:flex;
-
-justify-content:space-between;
-
-align-items:center;
-
-padding:100px 8%;
-
-min-height:100vh;
-
-background:linear-gradient(135deg,#0F172A,#1E3A8A);
-
-color:white;
-
-gap:80px;
-
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:120px 8%;
+    gap:60px;
+    background:linear-gradient(135deg,#0F172A,#1E3A8A);
+    color:white;
 }
 
 .hero-left img{
-
-width:350px;
-
-height:350px;
-
-border-radius:50%;
-
-object-fit:cover;
-
-border:8px solid white;
-
-box-shadow:0 20px 50px rgba(0,0,0,.4);
-
+    width:340px;
+    height:340px;
+    object-fit:cover;
+    border-radius:50%;
+    border:8px solid white;
+    box-shadow:0 20px 50px rgba(0,0,0,.35);
 }
 
-.hero-right{
-
-max-width:650px;
-
+.hero-right span{
+    color:#38BDF8;
+    font-size:18px;
 }
 
-.hero h1{
-
-font-size:64px;
-
-margin:15px 0;
-
+.hero-right h1{
+    font-size:58px;
+    margin:10px 0;
 }
 
-.hero h2{
-
-color:#38BDF8;
-
-margin-bottom:20px;
-
+.hero-right h2{
+    color:#38BDF8;
+    margin-bottom:20px;
 }
 
-.hero p{
-
-font-size:20px;
-
-margin-bottom:40px;
-
+.hero-right p{
+    max-width:650px;
+    line-height:1.8;
+    margin-bottom:35px;
 }
 
-.buttons{
-
-display:flex;
-
-gap:20px;
-
+.hero-buttons{
+    display:flex;
+    gap:20px;
 }
 
-.btn{
-
-background:#38BDF8;
-
-padding:15px 35px;
-
-border-radius:50px;
-
-text-decoration:none;
-
-color:#0F172A;
-
-font-weight:600;
-
+.btn-primary,
+.btn-secondary{
+    padding:14px 28px;
+    border-radius:50px;
+    text-decoration:none;
+    font-weight:600;
+    transition:.3s;
 }
 
-.btn-outline{
+.btn-primary{
+    background:#38BDF8;
+    color:#0F172A;
+}
 
-border:2px solid white;
+.btn-primary:hover{
+    background:white;
+}
 
-padding:15px 35px;
+.btn-secondary{
+    border:2px solid white;
+    color:white;
+}
 
-border-radius:50px;
+.btn-secondary:hover{
+    background:white;
+    color:#0F172A;
+}
 
-text-decoration:none;
+/* ================= ABOUT ================= */
 
-color:white;
+.about{
+    padding:100px 8%;
+}
+
+.container{
+    max-width:1100px;
+    margin:auto;
+}
+
+.about h2{
+    font-size:40px;
+    margin-bottom:20px;
+}
+
+.about p{
+    line-height:1.8;
+    font-size:18px;
+}
+
+/* ================= MOBILE ================= */
+
+@media(max-width:900px){
+
+.hero{
+    flex-direction:column;
+    text-align:center;
+}
+
+.hero-left img{
+    width:240px;
+    height:240px;
+}
+
+.hero-right h1{
+    font-size:42px;
+}
+
+.hero-buttons{
+    justify-content:center;
+}
+
+.nav-menu{
+    display:none;
+}
 
 }
