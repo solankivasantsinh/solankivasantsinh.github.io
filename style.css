@@ -1,117 +1,103 @@
-/* Google Font */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-body{
-
-    font-family:'Poppins',sans-serif;
-
-    background:#F8FAFC;
-
-    color:#0F172A;
-
-    line-height:1.6;
-
-}
-
-h1{
-
-    font-size:52px;
-
-}
-
-h2{
-
-    font-size:34px;
-
-}
-
-p{
-
-    font-size:18px;
-
-}
-/* Hero Section */
-
 .hero{
 
-    height:100vh;
+display:flex;
 
-    display:flex;
+justify-content:space-between;
 
-    justify-content:center;
+align-items:center;
 
-    align-items:center;
+padding:100px 8%;
 
-    text-align:center;
+min-height:100vh;
 
-    padding:20px;
+background:linear-gradient(135deg,#0F172A,#1E3A8A);
 
-    background:linear-gradient(135deg,#0F172A,#1E3A8A);
+color:white;
 
-    color:white;
+gap:80px;
 
 }
 
-.hero-content{
+.hero-left img{
 
-    max-width:800px;
+width:350px;
+
+height:350px;
+
+border-radius:50%;
+
+object-fit:cover;
+
+border:8px solid white;
+
+box-shadow:0 20px 50px rgba(0,0,0,.4);
+
+}
+
+.hero-right{
+
+max-width:650px;
 
 }
 
 .hero h1{
 
-    font-size:64px;
+font-size:64px;
 
-    margin-bottom:10px;
-
-    font-weight:700;
+margin:15px 0;
 
 }
 
 .hero h2{
 
-    color:#38BDF8;
+color:#38BDF8;
 
-    margin-bottom:20px;
+margin-bottom:20px;
 
 }
 
 .hero p{
 
-    font-size:20px;
+font-size:20px;
 
-    margin-bottom:35px;
+margin-bottom:40px;
+
+}
+
+.buttons{
+
+display:flex;
+
+gap:20px;
 
 }
 
 .btn{
 
-    display:inline-block;
+background:#38BDF8;
 
-    text-decoration:none;
+padding:15px 35px;
 
-    background:#38BDF8;
+border-radius:50px;
 
-    color:#0F172A;
+text-decoration:none;
 
-    padding:15px 35px;
+color:#0F172A;
 
-    border-radius:50px;
-
-    font-weight:600;
-
-    transition:.3s;
+font-weight:600;
 
 }
 
-.btn:hover{
+.btn-outline{
 
-    background:white;
+border:2px solid white;
+
+padding:15px 35px;
+
+border-radius:50px;
+
+text-decoration:none;
+
+color:white;
 
 }
