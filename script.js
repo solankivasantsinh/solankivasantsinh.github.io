@@ -232,15 +232,19 @@ window.addEventListener("scroll", () => {
    LOADER
 =========================== */
 
-window.addEventListener("load",()=>{
+window.addEventListener("load", () => {
 
-const loader=document.getElementById("loader");
+    const loader = document.getElementById("loader");
 
-setTimeout(()=>{
+    if (loader) {
 
-loader.classList.add("hide");
+        setTimeout(() => {
 
-},800);
+            loader.classList.add("hide");
+
+        }, 800);
+
+    }
 
 });
                                            
