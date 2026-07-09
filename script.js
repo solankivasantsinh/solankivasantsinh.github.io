@@ -73,11 +73,17 @@ entry.target.classList.add("show");
 
 });
 
-hiddenElements.forEach(el=>{
+hiddenElements.forEach(el => {
 
-el.classList.add("hidden");
+    if (el) {
 
-observer2.observe(el);
+        el.classList.add("hidden");
+
+        observer2.observe(el);
+
+    }
+
+});
 
 });
 window.addEventListener("scroll",()=>{
