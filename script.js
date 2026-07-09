@@ -224,3 +224,16 @@ window.addEventListener("scroll", () => {
     document.getElementById("progress-bar").style.width = scrolled + "%";
 
 });
+
+// Dark Mode Code
+
+themeToggle.addEventListener(...);
+
+
+// 👇 Iske niche paste karo
+
+window.addEventListener("scroll", () => {
+
+    ...
+
+});                                           
