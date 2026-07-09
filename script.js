@@ -237,3 +237,19 @@ window.addEventListener("scroll", () => {
     ...
 
 });                                           
+/* ===========================
+   LOADER
+=========================== */
+
+window.addEventListener("load",()=>{
+
+const loader=document.getElementById("loader");
+
+setTimeout(()=>{
+
+loader.classList.add("hide");
+
+},800);
+
+});
+                                           
