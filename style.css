@@ -1062,3 +1062,46 @@ INDUSTRIES
     color:white;
     transform:translateY(-8px);
 }
+/* ===========================
+   HAMBURGER MENU
+=========================== */
+
+.hamburger{
+    display:none;
+    flex-direction:column;
+    cursor:pointer;
+    gap:6px;
+}
+
+.hamburger span{
+    width:28px;
+    height:3px;
+    background:#fff;
+    border-radius:5px;
+    transition:.3s;
+}
+
+@media(max-width:900px){
+
+.nav-menu{
+    position:fixed;
+    top:80px;
+    left:-100%;
+    width:100%;
+    background:#0F172A;
+    flex-direction:column;
+    padding:40px 0;
+    text-align:center;
+    transition:.35s;
+    display:flex;
+}
+
+.nav-menu.active{
+    left:0;
+}
+
+.hamburger{
+    display:flex;
+}
+
+}
