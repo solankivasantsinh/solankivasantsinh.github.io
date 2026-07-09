@@ -300,3 +300,64 @@ grid-template-columns:1fr 1fr;
 }
 
 }
+
+/* EXPERIENCE */
+
+.experience{
+    padding:100px 8%;
+    background:#EEF4FF;
+}
+
+.experience h2{
+    text-align:center;
+    font-size:42px;
+    margin-bottom:60px;
+}
+
+.timeline{
+    max-width:900px;
+    margin:auto;
+    border-left:4px solid #2563EB;
+    padding-left:35px;
+}
+
+.timeline-item{
+    position:relative;
+    margin-bottom:50px;
+}
+
+.timeline-dot{
+    width:18px;
+    height:18px;
+    background:#2563EB;
+    border-radius:50%;
+    position:absolute;
+    left:-46px;
+    top:8px;
+}
+
+.timeline-content{
+    background:white;
+    padding:30px;
+    border-radius:18px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.timeline-content h3{
+    color:#2563EB;
+    margin-bottom:5px;
+}
+
+.timeline-content h4{
+    margin-bottom:10px;
+}
+
+.timeline-content span{
+    color:#64748B;
+    font-size:14px;
+}
+
+.timeline-content p{
+    margin-top:15px;
+    line-height:1.8;
+}
