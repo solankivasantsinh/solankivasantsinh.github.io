@@ -37,10 +37,10 @@ body{
     top:0;
     left:0;
     z-index:999;
-    background:rgba(15,23,42,.95);
+    background:rgba(15,23,42,.90);
     backdrop-filter:blur(12px);
+    transition:.3s;
 }
-
 .navbar{
     height:80px;
     display:flex;
@@ -710,4 +710,8 @@ display:none;
 .show{
     opacity:1;
     transform:translateY(0);
+}
+.header.scrolled{
+    background:#0F172A;
+    box-shadow:0 5px 20px rgba(0,0,0,.20);
 }
