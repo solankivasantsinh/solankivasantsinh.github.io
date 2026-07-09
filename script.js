@@ -50,7 +50,11 @@ observer.disconnect();
 
 })
 
-observer.observe(document.querySelector(".about"));
+const aboutSection = document.querySelector(".about");
+
+if (aboutSection) {
+    observer.observe(aboutSection);
+}
 const hiddenElements = document.querySelectorAll(
 ".about,.experience,.skills,.projects,.education,.achievements,.contact"
 );
