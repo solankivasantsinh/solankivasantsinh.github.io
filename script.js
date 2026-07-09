@@ -76,3 +76,10 @@ el.classList.add("hidden");
 observer2.observe(el);
 
 });
+window.addEventListener("scroll",()=>{
+
+const header=document.querySelector(".header");
+
+header.classList.toggle("scrolled",window.scrollY>50);
+
+});
