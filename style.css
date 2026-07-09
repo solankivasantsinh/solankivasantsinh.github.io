@@ -72,6 +72,8 @@ body{
 
 .nav-menu a:hover{
     color:#38BDF8;
+    border-bottom:2px solid #38BDF8;
+    padding-bottom:5px;
 }
 
 /* ===========================
@@ -675,4 +677,23 @@ display:none;
 .achievement-card p{
     color:#475569;
     line-height:1.7;
+}
+.project-card,
+.info-card,
+.education-card,
+.achievement-card,
+.contact-card{
+
+    transition:.35s ease;
+
+}
+
+.project-card:hover,
+.info-card:hover,
+.education-card:hover,
+.achievement-card:hover,
+.contact-card:hover{
+
+    transform:translateY(-10px) scale(1.02);
+
 }
