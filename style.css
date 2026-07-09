@@ -36,3 +36,82 @@ p{
     font-size:18px;
 
 }
+/* Hero Section */
+
+.hero{
+
+    height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    padding:20px;
+
+    background:linear-gradient(135deg,#0F172A,#1E3A8A);
+
+    color:white;
+
+}
+
+.hero-content{
+
+    max-width:800px;
+
+}
+
+.hero h1{
+
+    font-size:64px;
+
+    margin-bottom:10px;
+
+    font-weight:700;
+
+}
+
+.hero h2{
+
+    color:#38BDF8;
+
+    margin-bottom:20px;
+
+}
+
+.hero p{
+
+    font-size:20px;
+
+    margin-bottom:35px;
+
+}
+
+.btn{
+
+    display:inline-block;
+
+    text-decoration:none;
+
+    background:#38BDF8;
+
+    color:#0F172A;
+
+    padding:15px 35px;
+
+    border-radius:50px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.btn:hover{
+
+    background:white;
+
+}
