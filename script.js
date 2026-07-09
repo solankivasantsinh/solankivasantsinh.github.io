@@ -253,3 +253,54 @@ loader.classList.add("hide");
 
 });
                                            
+/* ===========================
+   EMAILJS CONTACT FORM
+=========================== */
+
+emailjs.init("3zYM77TrJm-vhQINn");
+
+const contactForm = document.getElementById("contact-form");
+
+if (contactForm) {
+
+    contactForm.addEventListener("submit", function (e) {
+
+        e.preventDefault();
+
+        const submitBtn = this.querySelector("button[type='submit']");
+        submitBtn.disabled = true;
+        submitBtn.innerHTML = "Sending...";
+
+        emailjs.send(
+            "service_8olan0b",
+            "template_p1acovl",
+            {
+                from_name: document.getElementById("name").value,
+                from_email: document.getElementById("email").value,
+                message: document.getElementById("message").value
+            }
+        )
+        .then(() => {
+
+            alert("✅ Thank you! Your message has been sent successfully.");
+
+            this.reset();
+
+        })
+        .catch((error) => {
+
+            console.error(error);
+
+            alert("❌ Failed to send message. Please try again.");
+
+        })
+        .finally(() => {
+
+            submitBtn.disabled = false;
+            submitBtn.innerHTML = "Send Message";
+
+        });
+
+    });
+
+}
