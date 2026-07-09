@@ -225,18 +225,6 @@ window.addEventListener("scroll", () => {
 
 });
 
-// Dark Mode Code
-
-themeToggle.addEventListener(...);
-
-
-// 👇 Iske niche paste karo
-
-window.addEventListener("scroll", () => {
-
-    ...
-
-});                                           
 /* ===========================
    LOADER
 =========================== */
