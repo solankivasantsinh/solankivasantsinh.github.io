@@ -232,21 +232,6 @@ window.addEventListener("scroll", () => {
    LOADER
 =========================== */
 
-window.addEventListener("load", () => {
-
-    const loader = document.getElementById("loader");
-
-    if (loader) {
-
-        setTimeout(() => {
-
-            loader.classList.add("hide");
-
-        }, 800);
-
-    }
-
-});
                                            
 /* ===========================
    EMAILJS CONTACT FORM
