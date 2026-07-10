@@ -32,15 +32,15 @@ body{
 =========================== */
 
 .header{
-    position:fixed;
-    width:100%;
-    top:0;
-    left:0;
-    z-index:999;
-    background:rgba(15,23,42,.90);
-    backdrop-filter:blur(12px);
-    transition:.3s;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    background: rgba(15,23,42,0.95);
+    backdrop-filter: blur(12px);
 }
+
 .navbar{
     height:80px;
     display:flex;
@@ -64,10 +64,9 @@ body{
 }
 
 .nav-menu a{
-    color:white;
-    text-decoration:none;
-    font-weight:500;
-    transition:.3s;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
 }
 
 .nav-menu a:hover{
@@ -75,6 +74,13 @@ body{
     border-bottom:2px solid #38BDF8;
     padding-bottom:5px;
 }
+.nav-container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    height:80px;
+}
+
 
 /* ===========================
    HERO
@@ -155,26 +161,21 @@ body{
 }
 
 .hero-buttons{
-
     display:flex;
-
     gap:20px;
-
+    flex-wrap:wrap;
+    align-items:center;
 }
 
 .btn-primary,
 .btn-secondary{
 
-    padding:15px 32px;
-
-    border-radius:50px;
-
-    text-decoration:none;
-
-    font-weight:600;
-
-    transition:.3s;
-
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    padding:15px 28px;
+    min-height:55px;
+    width:auto;
 }
 
 .btn-primary{
