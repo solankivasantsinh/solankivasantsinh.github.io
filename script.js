@@ -83,7 +83,8 @@ hiddenElements.forEach(el => {
     }
 
 });
-
+});
+    
 window.addEventListener("scroll",()=>{
 const header=document.querySelector(".header");
 
@@ -209,9 +210,6 @@ setTimeout(typeRole,300);
 
 }
 
-}
-
-typeRole();
 /* ===========================
    SCROLL PROGRESS BAR
 =========================== */
