@@ -30,182 +30,153 @@
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
 
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
 </head>
-
-<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-
-
-</body>
-    <script src="script.js"></script>
-</html>
 
 <body>
 
-    <div id="progress-bar"></div>
+<div id="progress-bar"></div>
     
     <!-- ================= NAVBAR ================= -->
 
-   <header class="header">
+<header class="header">
 
-<div class="container nav-container">
+    <div class="container nav-container">
 
-    ...
+        <a href="#home" class="logo">
+            <span>SV</span>
+        </a>
 
-    <div class="hamburger">
-        ...
+        <ul class="nav-menu">
+
+            <li><a href="#home">Home</a></li>
+
+            <li><a href="#about">About</a></li>
+
+            <li><a href="#experience">Experience</a></li>
+
+            <li><a href="#skills">Skills</a></li>
+
+            <li><a href="#projects">Projects</a></li>
+
+            <li><a href="#education">Education</a></li>
+
+            <li><a href="#contact">Contact</a></li>
+
+            <li>
+                <button id="theme-toggle" aria-label="Toggle Theme">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+            </li>
+
+        </ul>
+
+        <button class="hamburger" aria-label="Open Menu">
+
+            <span></span>
+
+            <span></span>
+
+            <span></span>
+
+        </button>
+
     </div>
 
-</div> <!-- container close -->
-
 </header>
-
-<div class="logo">
-SV
-</div>
-
-<ul class="nav-menu">
-
-<li><a href="#home">Home</a></li>
-
-<li><a href="#about">About</a></li>
-
-<li><a href="#experience">Experience</a></li>
-
-<li><a href="#skills">Skills</a></li>
-
-<li><a href="#projects">Projects</a></li>
-
-<li><a href="#education">Education</a></li>
-
-<li><a href="#contact">Contact</a></li>
-
-<li>
-<button id="theme-toggle">
-<i class="fa-solid fa-moon"></i>
-</button>
-</li>
-
-</ul>
-
-<div class="hamburger">
-
-<span></span>
-
-<span></span>
-
-<span></span>
-
-</div>
-
-
-</header>
-    <!-- ================= HERO ================= -->
-
-    <section class="hero" id="home">
-
-<div class="hero-left">
-
-<img src="assets/images/profile.jpg"
-alt="Solanki Vasantsinh">
-
-</div>
-
-<div class="hero-right">
-
-<p class="welcome">
-
-Hello I'm
-
-</p>
-
-<h1>
-
-Solanki Vasantsinh
-
-</h1>
-
-<h2>
-
-<span id="typing"></span>
-
-</h2>
-
-<p>
-
-Helping Industries reduce Energy Consumption,
-Optimize HVAC Systems,
-Improve Chiller Plant Performance,
-Reduce Utility Cost
-through Engineering Solutions,
-Industrial Automation,
-IoT Energy Monitoring
-and ESCO Projects.
-
-</p>
-
-<div class="hero-buttons">
-
-<div class="hero-stats">
-
-<div>
-
-<h3>6+</h3>
-
-<p>Years</p>
-
-</div>
-
-<div>
-
-<h3>100+</h3>
-
-<p>Clients</p>
-
-</div>
-
-<div>
-
-<h3>500+</h3>
-
-<p>Meetings</p>
-
-</div>
-
-</div>    
     
-<a href="assets/resume/Solanki_Vasantsinh_Resume.pdf"
-class="btn-primary"
-target="_blank">
+   <!-- ================= HERO ================= -->
 
-<i class="fa-solid fa-download"></i>
+<section class="hero" id="home">
 
-Download Resume
+    <div class="container hero-container">
 
-</a>
+        <div class="hero-left">
 
-<a href="https://www.linkedin.com/in/solanki-vasantsinh-672aba144/"
-class="btn-secondary"
-target="_blank">
+            <img src="assets/images/profile.jpg"
+                 alt="Solanki Vasantsinh">
 
-<i class="fab fa-linkedin"></i>
+        </div>
 
-LinkedIn
+        <div class="hero-right">
 
-</a>
+            <p class="welcome">Hello, I'm</p>
 
-<a href="#contact"
-class="btn-secondary">
+            <h1>Solanki Vasantsinh</h1>
 
-<i class="fa-solid fa-paper-plane"></i>
+            <h2><span id="typing"></span></h2>
 
-Contact
+            <p>
+                Helping industries reduce energy consumption through
+                Energy Audits, HVAC Optimization, Chiller Plant Optimization,
+                ESCO Projects, Industrial Automation and IoT Energy Monitoring.
+            </p>
 
-</a>
+            <div class="hero-buttons">
 
-</div>
+                <a href="assets/resume/Solanki_Vasantsinh_Resume.pdf"
+                   class="btn-primary"
+                   target="_blank">
 
-</div>
+                    <i class="fa-solid fa-download"></i>
+
+                    Download Resume
+
+                </a>
+
+                <a href="https://www.linkedin.com/in/solanki-vasantsinh-672aba144/"
+                   class="btn-secondary"
+                   target="_blank">
+
+                    <i class="fab fa-linkedin"></i>
+
+                    LinkedIn
+
+                </a>
+
+                <a href="#contact"
+                   class="btn-secondary">
+
+                    <i class="fa-solid fa-paper-plane"></i>
+
+                    Contact
+
+                </a>
+
+            </div>
+
+            <div class="hero-stats">
+
+                <div>
+
+                    <h3>6+</h3>
+
+                    <p>Years</p>
+
+                </div>
+
+                <div>
+
+                    <h3>100+</h3>
+
+                    <p>Clients</p>
+
+                </div>
+
+                <div>
+
+                    <h3>500+</h3>
+
+                    <p>Meetings</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
 
 </section>
     
@@ -1066,3 +1037,8 @@ class="top-btn">
 </a>    
     
 </footer>
+<script src="script.js"></script>
+
+</body>
+
+</html>
