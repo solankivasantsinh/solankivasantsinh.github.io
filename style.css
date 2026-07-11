@@ -930,6 +930,41 @@ body.dark .cert-card h3,
 body.dark .cert-card p{
     color:#F8FAFC !important;
 }
+/* ===========================
+   DARK MODE FIX
+=========================== */
+
+body.dark .skill-card i,
+body.dark .cert-card i{
+    color:#38BDF8 !important;
+}
+
+body.dark .industry-card{
+    color:#F8FAFC !important;
+}
+
+body.dark .industry-card i{
+    color:#38BDF8 !important;
+}
+
+body.dark .skill-card:hover,
+body.dark .industry-card:hover,
+body.dark .cert-card:hover{
+
+    background:#2563EB;
+
+}
+
+body.dark .skill-card:hover h3,
+body.dark .skill-card:hover p,
+body.dark .cert-card:hover h3,
+body.dark .cert-card:hover p,
+body.dark .industry-card:hover{
+
+    color:white !important;
+
+}
+
 /* ===== Dark Mode Icons ===== */
 
 body.dark .skill-card i,
