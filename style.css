@@ -1568,3 +1568,104 @@ transform:rotate(360deg);
 }
 
 }
+/* ===========================
+   FOOTER
+=========================== */
+
+.footer{
+
+    background:#0F172A;
+
+    color:white;
+
+    padding:70px 8% 25px;
+
+}
+
+.footer-container{
+
+    display:grid;
+
+    grid-template-columns:2fr 1fr 1fr;
+
+    gap:50px;
+
+}
+
+.footer h3{
+
+    color:#38BDF8;
+
+    margin-bottom:20px;
+
+}
+
+.footer h4{
+
+    margin-bottom:20px;
+
+}
+
+.footer p{
+
+    color:#CBD5E1;
+
+    line-height:1.8;
+
+}
+
+.footer-links{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:12px;
+
+}
+
+.footer-links a{
+
+    color:#CBD5E1;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+}
+
+.footer-links a:hover{
+
+    color:#38BDF8;
+
+    padding-left:8px;
+
+}
+
+.footer-contact p{
+
+    margin-bottom:12px;
+
+}
+
+.footer-contact i{
+
+    color:#38BDF8;
+
+    margin-right:10px;
+
+}
+
+.footer-bottom{
+
+    border-top:1px solid rgba(255,255,255,.08);
+
+    margin-top:40px;
+
+    padding-top:25px;
+
+    text-align:center;
+
+    color:#94A3B8;
+
+}
