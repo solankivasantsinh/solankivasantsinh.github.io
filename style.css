@@ -103,6 +103,19 @@ body{
     color:#fff;
 
 }
+.hero-container{
+    width:100%;
+    max-width:1300px;
+    margin:0 auto;
+
+    display:grid;
+    grid-template-columns:380px 1fr;
+
+    align-items:center;
+    gap:80px;
+}
+
+
 .hero-left{
 
     display:flex;
@@ -112,7 +125,6 @@ body{
     align-items:center;
 
 }
-
 .hero-left img{
 
     width:320px;
@@ -156,7 +168,10 @@ body{
 
     justify-content:center;
 
+    align-items:flex-start;
+
 }
+
 .hero-right h1{
 
     font-size:68px;
