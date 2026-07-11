@@ -616,6 +616,25 @@ display:none;
     box-shadow:0 15px 35px rgba(37,99,235,.35);
 
 }
+.industry{
+
+    display:inline-block;
+
+    background:#E0F2FE;
+
+    color:#2563EB;
+
+    padding:6px 14px;
+
+    border-radius:30px;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    margin:15px 0;
+
+}
 
 /* ===========================
    CONTACT
