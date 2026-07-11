@@ -930,6 +930,38 @@ body.dark .cert-card h3,
 body.dark .cert-card p{
     color:#F8FAFC !important;
 }
+/* ===== Dark Mode Icons ===== */
+
+body.dark .skill-card i,
+body.dark .industry-card i,
+body.dark .cert-card i{
+    color:#38BDF8 !important;
+}
+
+/* ===== Dark Mode Borders ===== */
+
+body.dark .skill-card,
+body.dark .industry-card,
+body.dark .cert-card{
+    border:1px solid rgba(255,255,255,.08);
+}
+
+/* ===== Hover Effect ===== */
+
+body.dark .skill-card:hover,
+body.dark .industry-card:hover,
+body.dark .cert-card:hover{
+    background:#2563EB;
+    color:#fff;
+}
+
+body.dark .skill-card:hover h3,
+body.dark .skill-card:hover p,
+body.dark .industry-card:hover,
+body.dark .cert-card:hover h3,
+body.dark .cert-card:hover p{
+    color:#fff !important;
+}
 
 
 /* ===========================
