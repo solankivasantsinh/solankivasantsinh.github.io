@@ -410,14 +410,8 @@ body{
 }
 
 .timeline::before{
-    content:"";
-    position:absolute;
-    left:20px;
-    top:0;
-    width:4px;
-    height:100%;
-    background:linear-gradient(#38BDF8,#2563EB);
-    border-radius:20px;
+    left:22px;
+    width:3px;
 }
 
 .timeline-item{
@@ -459,7 +453,7 @@ body{
     box-shadow:0 10px 25px rgba(37,99,235,.35);
 
     z-index:2;
-
+    margin-top:8px;
 }
 
 .timeline-content{
