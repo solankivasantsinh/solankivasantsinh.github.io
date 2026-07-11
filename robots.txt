@@ -1,1 +1,4 @@
+User-agent: *
+Allow: /
 
+Sitemap: https://solankivasantsinh.github.io/sitemap.xml
