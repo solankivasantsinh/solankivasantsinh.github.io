@@ -569,26 +569,29 @@ display:none;
 }
 
 .project-card{
-    background:white;
-    padding:35px;
+    background:#ffffff;
     border-radius:18px;
-    box-shadow:0 10px 25px rgba(0,0,0,.08);
-    transition:.3s;
+    padding:35px;
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+    transition:all .35s ease;
+    border:1px solid #E2E8F0;
 }
 
 .project-card:hover{
     transform:translateY(-10px);
+    box-shadow:0 20px 45px rgba(37,99,235,.20);
 }
 
-.project-card h3{
-    color:#2563EB;
-    margin-bottom:15px;
+.project-card ul{
+    margin-top:20px;
+    padding-left:18px;
 }
 
-.project-card p{
-    color:#475569;
-    line-height:1.8;
+.project-card li{
+    margin-bottom:10px;
+    line-height:1.6;
 }
+
 /* ===========================
    CONTACT
 =========================== */
