@@ -234,63 +234,44 @@ body{
     margin:auto;
     padding:0 20px;
 }
-
 .section-title{
+
+    max-width:750px;
+
+    margin:0 auto 60px;
+
     text-align:center;
-    margin-bottom:50px;
-}
-
-.section-title span{
-
-    display:inline-block;
-
-    color:#0072ff;
-
-    font-size:13px;
-
-    font-weight:700;
-
-    letter-spacing:3px;
-
-    text-transform:uppercase;
-
-    margin-bottom:10px;
 
 }
 
 .section-title h2{
 
-    font-size:clamp(28px,3vw,42px);
+    font-size:42px;
 
     font-weight:700;
 
     line-height:1.2;
 
-    margin:12px 0 18px;
+    margin:15px auto;
 
-    color:#14213d;
-
-    max-width:700px;
-
-    margin-left:auto;
-
-    margin-right:auto;
+    max-width:650px;
 
 }
 
 .section-title p{
 
-    max-width:620px;
+    font-size:20px;
 
-    margin:0 auto;
+    color:#666;
 
-    font-size:18px;
+    max-width:700px;
+
+    margin:auto;
 
     line-height:1.7;
 
-    color:#5b6475;
-
 }
+
 .about-wrapper{
     display:grid;
     grid-template-columns:320px 1fr;
