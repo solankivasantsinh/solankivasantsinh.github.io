@@ -2654,15 +2654,33 @@ transform:translateY(-9px) rotate(-45deg);
 
 }
 .section-title h2{
-    font-size:46px;
-    margin:15px 0;
+
+    font-size:32px;
+
+    font-weight:700;
+
+    line-height:1.25;
+
+    max-width:520px;
+
+    margin:12px auto 18px;
+
+    color:#14213d;
+
 }
 
 .section-title p{
-    max-width:700px;
-    margin:auto;
-    color:#666;
+
+    font-size:17px;
+
+    max-width:600px;
+
+    margin:0 auto;
+
     line-height:1.8;
+
+    color:#666;
+
 }
 
 .about-wrapper{
