@@ -2,24 +2,54 @@
    COUNTER ANIMATION
 =========================== */
 
-const counters = document.querySelectorAll(".info-card h3");
+const counters = document.querySelectorAll(".stat-card h3, .info-card h3");
 
-function animateCounter(counter) {
-    const target = parseInt(counter.innerText);
+function animateCounter(counter){
+
+    const original = counter.innerText;
+
+    const number = parseInt(original.replace(/\D/g,""));
+
+    const isPercent = original.includes("%");
+
+    const isPlus = original.includes("+");
+
     let count = 0;
-    const speed = Math.max(1, target / 50);
 
-    function update() {
-        if (count < target) {
+    const speed = Math.max(1, number/60);
+
+    function update(){
+
+        if(count < number){
+
             count += speed;
-            counter.innerText = Math.ceil(count) + "+";
+
+            if(isPercent){
+
+                counter.innerText = Math.ceil(count)+"%";
+
+            }else if(isPlus){
+
+                counter.innerText = Math.ceil(count)+"+";
+
+            }else{
+
+                counter.innerText = Math.ceil(count);
+
+            }
+
             requestAnimationFrame(update);
-        } else {
-            counter.innerText = target + "+";
+
+        }else{
+
+            counter.innerText = original;
+
         }
+
     }
 
     update();
+
 }
 
 const aboutSection = document.querySelector(".about");
@@ -51,7 +81,7 @@ if (aboutSection && counters.length > 0) {
 =========================== */
 
 const hiddenElements = document.querySelectorAll(
-    ".about,.experience,.skills,.projects,.education,.achievements,.contact"
+    ".hero,.about,.experience,.skills,.projects,.education,.achievements,.contact"
 );
 
 const revealObserver = new IntersectionObserver((entries) => {
@@ -168,12 +198,12 @@ const typing = document.getElementById("typing");
 if (typing) {
 
     const roles = [
-        "Sr. Sales Engineer",
-        "Energy Efficiency Expert",
-        "HVAC Specialist",
-        "ESCO Consultant",
-        "Industrial Automation Engineer"
-    ];
+    "Senior Sales Engineer",
+    "Energy Efficiency Expert",
+    "HVAC Optimization Specialist",
+    "ESCO Consultant",
+    "Industrial Automation Expert"
+];
 
     let roleIndex = 0;
     let charIndex = 0;
@@ -292,3 +322,28 @@ if (typeof emailjs !== "undefined") {
     }
 
 }
+const heroImage = document.querySelector(".hero-image-wrapper");
+
+window.addEventListener("scroll",()=>{
+
+    if(heroImage){
+
+        heroImage.style.transform =
+        `translateY(${window.scrollY*0.05}px)`;
+
+    }
+
+});
+
+window.addEventListener("mousemove",(e)=>{
+
+    const glow = document.querySelector(".hero-glow-1");
+
+    if(glow){
+
+        glow.style.transform =
+        `translate(${e.clientX/35}px,${e.clientY/35}px)`;
+
+    }
+
+});
