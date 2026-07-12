@@ -273,10 +273,17 @@ body{
 }
 
 .about-wrapper{
-    display:grid;
-    grid-template-columns:320px 1fr;
-    gap:40px;
-    align-items:start;
+
+display:grid;
+
+grid-template-columns:340px 1fr;
+
+gap:60px;
+
+align-items:start;
+
+margin-top:40px;
+
 }
 
 .profile-card{
