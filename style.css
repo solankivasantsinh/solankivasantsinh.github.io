@@ -2638,13 +2638,19 @@ transform:translateY(-9px) rotate(-45deg);
 
 .section-title span{
 
-    color:#0072ff;
+    display:inline-block;
 
     font-size:14px;
 
-    font-weight:600;
+    font-weight:700;
 
-    letter-spacing:2px;
+    letter-spacing:3px;
+
+    text-transform:uppercase;
+
+    color:#0d6efd;
+
+    margin-bottom:10px;
 
 }
 .section-title h2{
