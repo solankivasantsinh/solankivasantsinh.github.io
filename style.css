@@ -241,25 +241,56 @@ body{
 }
 
 .section-title span{
+
+    display:inline-block;
+
     color:#0072ff;
-    font-size:14px;
-    font-weight:600;
-    letter-spacing:2px;
+
+    font-size:13px;
+
+    font-weight:700;
+
+    letter-spacing:3px;
+
+    text-transform:uppercase;
+
+    margin-bottom:10px;
+
 }
 
 .section-title h2{
-    font-size:36px;
-    margin:10px 0;
-    color:#1b2430;
+
+    font-size:clamp(28px,3vw,42px);
+
+    font-weight:700;
+
+    line-height:1.2;
+
+    margin:12px 0 18px;
+
+    color:#14213d;
+
+    max-width:700px;
+
+    margin-left:auto;
+
+    margin-right:auto;
+
 }
 
 .section-title p{
-    max-width:700px;
-    margin:0 auto;
-    color:#666;
-    line-height:1.8;
-}
 
+    max-width:620px;
+
+    margin:0 auto;
+
+    font-size:18px;
+
+    line-height:1.7;
+
+    color:#5b6475;
+
+}
 .about-wrapper{
     display:grid;
     grid-template-columns:320px 1fr;
